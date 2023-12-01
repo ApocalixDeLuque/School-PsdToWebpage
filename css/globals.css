@@ -3,20 +3,54 @@
     src: url("../YesevaOne-Regular.ttf") format("truetype");
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Yeseva One", fallback;
-    text-decoration: unset;
-    color: unset;
-    list-style: none;
-}
-
 body {
     background-color: whitesmoke;
 }
 
-.promo_section {
+* {
+    color: unset;
+    font-family: "Yeseva One", fallback;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: unset;
+}
+
+/* clases para la barra de navegacion */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 10vh;
+    width: 80%;
+    color: white;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.headermenu {
+    display: flex;
+    gap: 48px;
+}
+
+.headerredes {
+    display: flex;
+    gap: 16px;
+}
+
+.headerredes img {
+    max-width: 16px;
+    height: 16px;
+}
+
+/* clases para la primera seccion de la pagina */
+.seccion1 {
     background-image: url("../img/section1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -27,61 +61,26 @@ body {
     flex-direction: column;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    height: 10vh;
-    width: 80%;
-
-    color: white;
-}
-
-.logo {
-    width: 10rem;
-    height: 10rem;
-    padding-top: 1rem;
-
-    cursor: pointer;
-}
-
-.header__menu {
-    display: flex;
-    gap: 3rem;
-}
-
-.header__social {
-    display: flex;
-    gap: 1rem;
-}
-
-.header__social img {
-    filter: invert(1);
-    max-width: 1rem;
-    height: 1rem;
-}
-
-.promo_section__content {
+.seccion1contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
 
     width: 100%;
     height: 100%;
 }
 
-.promo_section__title {
+.seccion1titulo {
     text-align: center;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 300;
     color: white;
 }
-.promo_section__buttons button {
+.seccion1botones button {
     border: none;
-    padding: 0.75rem 2rem;
+    padding: 12px 32px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 200;
@@ -89,21 +88,22 @@ body {
     cursor: pointer;
 }
 
-.promo_section__buttons button:first-child {
+.seccion1botones button:first-child {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.promo_section__buttons button:last-child {
+.seccion1botones button:last-child {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.promo_section__buttons {
+.seccion1botones {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 16px;
+    margin-top: 16px;
 }
 
-.about_section {
+/* clases para la segunda seccion de la pagina */
+.seccion2 {
     background-image: url("../img/section2.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -115,33 +115,33 @@ body {
     align-items: center;
 }
 
-.about_section__content {
+.seccion2contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
 
     width: 60%;
     height: 100%;
 }
 
-.about_section__title {
+.seccion2titulo {
     text-align: center;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 300;
     color: #caa618;
 }
 
-.about_section__text {
+.seccion2texto {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 300;
 }
 
-.about_section__image {
+.seccion2imagenes {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -149,13 +149,14 @@ body {
     height: 100%;
 }
 
-.about_section__image img {
+.seccion2imagenes img {
     width: 80%;
     height: auto;
     aspect-ratio: 1/1;
 }
 
-.ingredients_section {
+/* clases para la tercera seccion de la pagina */
+.seccion3 {
     background-image: url("../img/section3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -167,55 +168,55 @@ body {
     align-items: center;
 }
 
-.ingredients_section__empty {
+.seccion3espacio {
     width: 50%;
     height: 100%;
 }
 
-.ingredients_section__content {
+.seccion3contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 32px;
 
     width: 50%;
     height: 100%;
 }
 
-.ingredients_section__dialog {
+.seccion3recuadro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
 
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 300;
     text-align: center;
 
-    padding: 3rem;
+    padding: 48px;
 }
 
-.ingredients_section__text {
+.seccion3texto {
     font-size: medium;
     font-weight: 200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.ingredients_section__images {
+.seccion3imagenes {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
 }
 
-.ingredients_section__images img {
-    width: 5rem;
+.seccion3imagenes img {
+    width: 80px;
     height: auto;
     aspect-ratio: 1/1;
 }
@@ -230,51 +231,50 @@ body {
 
     text-align: center;
 
-    padding: 1rem;
+    padding: 16px;
 }
 
-.footer__content {
+.footercontenido {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 5rem;
-    padding: 5rem;
+    gap: 80px;
+    padding: 80px;
 }
 
-.footer__section {
+.footerseccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
-.footer__section h3 {
-    font-size: 1.5rem;
+.footerseccion h3 {
+    font-size: 24px;
     font-weight: 300;
 }
 
-.footer__section p {
+.footerseccion p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 200;
 }
 
-.footer__section span {
+.footerseccion span {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 200;
 }
 
-.footer__social {
+.footerredes {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
-.footer__social img {
-    filter: invert(1);
-    max-width: 1rem;
-    height: 1rem;
+.footerredes img {
+    max-width: 16px;
+    height: 16px;
 }
